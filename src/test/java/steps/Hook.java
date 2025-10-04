@@ -46,12 +46,13 @@ public class Hook extends BaseUtil{
             System.out.println(scenario.getName());
         }
         System.out.println("Closing the browser : MOCK");
-            // In steps.Hook.TearDownTest
+            // my fix line 50-55
+        // In steps.Hook.TearDownTest
  
-        if (Base.BaseUtil.Driver != null) {
-            Base.BaseUtil.Driver.quit();
-            Base.BaseUtil.Driver = null; // Optional: set to null after quitting
-        }
+        // if (Base.BaseUtil.Driver != null) {
+        //     Base.BaseUtil.Driver.quit();
+        //     Base.BaseUtil.Driver = null; // Optional: set to null after quitting
+        // }
   
       //  base.Driver.quit();
         
